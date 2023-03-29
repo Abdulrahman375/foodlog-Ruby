@@ -1,0 +1,13 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @entry %>
+
+<div class = "card-footer" >
+
+  <%= link_to "Edit this entry", edit_entry_path(@entry) , class: "card-footer-item" %> |
+  <%= link_to "Back to entries", entries_path , class: "card-footer-item"%>
+
+  <%= button_to "Destroy this entry", @entry, method: :delete , class: "card-footer-item" %>
+  </div>
+  </div>
+</div>
