@@ -3,8 +3,8 @@
 
 <header class="card-header ">
   <h1 class ="card-header-title" >
-    <strong>Meal type:</strong>
-    <%= entry.meal_type %>
+    <strong>Meal type:  </strong>
+    <%= entry.meal_type %>  ||  <%= entry.category.title if entry.category.present? %>
   </h1>
 </header>
 
