@@ -1,11 +1,12 @@
-
-<%  content_for :title do %>
-Foodlog &ndash; <%= DateTime.now%>
+<% content_for :title do %>
+  Foodlog
 <% end %>
 
+<div class="columns mt-6 is-centerd">
+<%= link_to "View all entries" , archives_index_path , class: "button is-link is-outlined is-centerd" %>
+</div>
 
-<div class="columns mt-6 is-centerd">  </div>
-
+<div class="columns mt-6 is-centerd">
 
 <div id="entries">
   <% @entries.each do |entry| %>
@@ -16,15 +17,12 @@ Foodlog &ndash; <%= DateTime.now%>
 
 
     <%= render entry %>
-    <p>
-
-     <%= link_to "Show this entry", entry , class: "card-footer" %>
-      
 
      </div>
+<br><br>
 
       </div>
-    </p>
   <% end %>
+</div>
 </div>
 
